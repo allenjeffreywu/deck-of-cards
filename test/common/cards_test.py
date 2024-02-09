@@ -1,14 +1,11 @@
 import unittest
 
-from cards import Card, Deck
+from src.common.cards import Card, Deck
 
 """
 Created by: Allen Wu
 cards_test.py tests cards' Card and Deck implementations
 """
-
-if __name__ == '__main__':
-    unittest.main()
 
 
 class CardTest(unittest.TestCase):
@@ -23,7 +20,7 @@ class CardTest(unittest.TestCase):
     def test_card_gt(self):
         card_1 = Card(self.SUIT_1, 1)
         card_2 = Card(self.SUIT_1, 2)
-        self.assertEqual(card_2 > card_1, True)
+        self.assertTrue(card_2 > card_1)
 
 
 class DeckTest(unittest.TestCase):
@@ -35,10 +32,14 @@ class DeckTest(unittest.TestCase):
         for val in deck_2.get_deck():
             deck_1.deck.remove(val)
         # assert that the deck is empty and has all cards
-        self.assertEqual(not deck_1.get_deck(), True)
+        self.assertTrue(not deck_1.get_deck())
 
     def test_deck_draw(self):
         deck = Deck()
         self.assertEqual(len(deck.get_deck()), self.DECK_SIZE)
         deck.draw_card()
         self.assertEqual(len(deck.get_deck()), self.DECK_SIZE - 1)
+
+
+if __name__ == '__main__':
+    unittest.main()

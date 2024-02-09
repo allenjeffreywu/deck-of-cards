@@ -64,7 +64,7 @@ class Deck:
         self.deck.remove(card)
         return card
 
-    def get_deck(self) -> Set:
+    def get_deck(self) -> Set[Card]:
         return self.deck
 
 

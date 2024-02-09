@@ -1,4 +1,4 @@
-from cards import Deck
+from src.common.cards import Deck
 
 if __name__ == '__main__':
     deck = Deck()
