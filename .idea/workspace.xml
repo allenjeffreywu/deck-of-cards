@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f755704-152d-4137-a818-6c7a4f0cd3c3" name="Changes" comment="Deck implementation">
-      <change afterPath="$PROJECT_DIR$/src/poker/poker_hands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/poker/texas_holdem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/poker/poker_hands_test.py" afterDir="false" />
+    <list default="true" id="4f755704-152d-4137-a818-6c7a4f0cd3c3" name="Changes" comment="royal flush checking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/cards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/common/cards_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poker/poker_hands.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/poker/poker_hands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poker/texas_holdem.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/poker/texas_holdem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/poker/poker_hands_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/poker/poker_hands_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +41,9 @@
     <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2c7dQBLVSKZhEFhtQ2ZSMxnW9Jy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -59,12 +56,14 @@
     "Python tests.Python tests for cards_test.CardTest.test_card_gt.executor": "Run",
     "Python tests.Python tests for cards_test.DeckTest.executor": "Run",
     "Python tests.Python tests for poker_hands_test.PokerHandsTest.executor": "Run",
+    "Python tests.Python tests for poker_hands_test.PokerHandsTest.test_is_flush.executor": "Run",
     "Python tests.Python tests for poker_hands_test.PokerHandsTest.test_royal_flush.executor": "Run",
     "Python tests.Python tests in cards_test.py.executor": "Run",
-    "Python tests.Python tests in poker_hands_test.py.executor": "Debug",
+    "Python tests.Python tests in poker_hands_test.py.executor": "Run",
     "Python.cards.executor": "Run",
     "Python.main.executor": "Run",
     "Python.poker_hands.executor": "Run",
+    "Python.texas_holdem.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -87,7 +86,7 @@
       <recent name="$PROJECT_DIR$/common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in poker_hands_test.py">
+  <component name="RunManager" selected="Python tests.Python tests for poker_hands_test.PokerHandsTest.test_is_flush">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="deck-of-cards" />
       <option name="ENV_FILES" value="" />
@@ -140,7 +139,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for poker_hands_test.PokerHandsTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for poker_hands_test.PokerHandsTest.test_is_flush" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="deck-of-cards" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,7 +150,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;poker_hands_test.PokerHandsTest&quot;" />
+      <option name="_new_target" value="&quot;poker_hands_test.PokerHandsTest.test_is_flush&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -187,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for poker_hands_test.PokerHandsTest.test_is_flush" />
         <item itemvalue="Python tests.Python tests in poker_hands_test.py" />
         <item itemvalue="Python tests.Python tests in cards_test.py" />
         <item itemvalue="Python tests.Python tests for cards_test.CardTest" />
         <item itemvalue="Python tests.Python tests for cards_test.DeckTest" />
-        <item itemvalue="Python tests.Python tests for poker_hands_test.PokerHandsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707472774421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="royal flush checking">
+      <option name="closed" value="true" />
+      <created>1707481680315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707481680315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +246,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Deck implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deck implementation" />
+    <MESSAGE value="royal flush checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="royal flush checking" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
